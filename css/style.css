@@ -1,3 +1,21 @@
+/* Components */
+
+.btn {
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: 2px solid var(--primary-color);
+	font-weight: 400;
+}
+
+.btn--primary {
+	color: var(--primary-color);
+}
+
+.btn--secondary {
+	background-color: var(--primary-color);
+	color: var(--white);
+}
+
 /* Header */
 
 nav {
@@ -15,17 +33,8 @@ nav {
 	width: 100%;
 }
 
-.nav__right__btn {
+.nav__right .btn--secondary {
 	margin-left: 15px;
-	border: 1px solid var(--primary-color);
-	color: var(--primary-color);
-	border-radius: 5px;
-	padding: 10px 20px;
-}
-
-.nav__right__btn:nth-child(2) {
-	background-color: var(--primary-color);
-	color: var(--white);
 }
 
 /* Mobile */
