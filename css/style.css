@@ -1,0 +1,37 @@
+/* Header */
+
+nav {
+	background-color: var(--white);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	position: fixed;
+	width: 100%;
+}
+
+.nav__img {
+	max-width: 40px;
+	width: 100%;
+}
+
+.nav__right__btn {
+	margin-left: 15px;
+	border: 1px solid var(--primary-color);
+	color: var(--primary-color);
+	border-radius: 5px;
+	padding: 10px 20px;
+}
+
+.nav__right__btn:nth-child(2) {
+	background-color: var(--primary-color);
+	color: var(--white);
+}
+
+/* Mobile */
+
+@media all and (max-width: 768px) {
+	.nav {
+		padding: 10px;
+	}
+}
