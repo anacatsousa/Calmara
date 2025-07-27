@@ -9,6 +9,7 @@
 
 .btn--primary {
 	color: var(--primary-color);
+	background-color: var(--white);
 }
 
 .btn--secondary {
@@ -37,10 +38,65 @@ nav {
 	margin-left: 15px;
 }
 
+.hero {
+	min-height: 100dvh;
+	padding: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 50px;
+	background-color: var(--primary-color);
+	color: var(--white);
+}
+
+.hero__left {
+	width: 100%;
+	max-width: 700px;
+	display: flex;
+	flex-direction: column;
+	gap: 2.5rem;
+}
+
+h1 {
+	font-size: clamp(2.5rem, 5vw + 1rem, 4.5rem);
+}
+
+.hero p {
+	font-size: clamp(1rem, 3vw + 0.1rem, 1.2rem);
+}
+
+.hero__right {
+	width: 100%;
+	max-width: 500px;
+	text-align: center;
+	container-type: inline-size;
+	container-name: heroRight;
+}
+
+/* Tablet */
+
+@media all and (min-width: 768px) {
+	.hero {
+		padding: 140px 70px 40px 70px;
+	}
+}
+
 /* Mobile */
 
 @media all and (max-width: 768px) {
+	/* header */
 	.nav {
 		padding: 10px;
+	}
+
+	.hero {
+		padding: 140px 30px 40px 30px;
+	}
+}
+
+@container heroRight (max-width: 767px) {
+	.hero__right img {
+		width: 100%;
 	}
 }
