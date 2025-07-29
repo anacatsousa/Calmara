@@ -71,6 +71,7 @@ td {
 	vertical-align: baseline;
 	background: transparent;
 	text-decoration: none;
+	scroll-behavior: smooth;
 }
 body {
 	line-height: 1;

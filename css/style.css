@@ -100,8 +100,71 @@ nav {
 	width: 80%;
 }
 
+.features {
+	color: var(--black);
+	padding: 120px 100px;
+}
+
+.features__title {
+	font-size: clamp(1rem, 5vw + 0.5rem, 2rem);
+}
+
 .reviews {
 	background-color: var(--white);
+	padding: 0 100px 120px 100px;
+}
+
+.reviews__carousel {
+	display: flex;
+	flex-direction: row;
+	gap: 50px;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+}
+.reviews__carousel::-webkit-scrollbar {
+	display: none;
+}
+
+.reviews__controls {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+
+.reviews__dots {
+	background-color: var(--secondary-color);
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	transition: 0.3s;
+	margin-top: 30px;
+}
+
+.reviews__dots:hover,
+#dot4:target {
+	background-color: var(--primary-color);
+}
+
+.reviews__card {
+	padding: 30px;
+	border: 2px solid var(--primary-color);
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+	flex: 0 0 30%;
+	scroll-snap-align: start;
+	margin-top: 120px;
+	scroll-margin-top: 120px;
+}
+
+.reviews__star {
+	max-width: 20px;
+	width: 100%;
+	height: auto;
 }
 
 .outcome {
@@ -144,7 +207,7 @@ nav {
 }
 
 .download__img--google {
-	max-width: 225px;
+	max-width: 222px;
 	margin-left: 10px;
 }
 
@@ -198,9 +261,18 @@ nav {
 	/* Main */
 
 	.apresentation,
+	.features,
 	.outcome,
 	.download {
 		padding: 70px;
+	}
+	.reviews {
+		padding: 0 70px 70px 70px;
+	}
+
+	.reviews__card {
+		margin-top: 70px;
+		scroll-margin-top: 70px;
 	}
 
 	/* Footer */
@@ -216,6 +288,10 @@ nav {
 	.apresentation__title span {
 		display: block;
 		margin-top: 10px;
+	}
+
+	.reviews__card {
+		flex: 0 0 45%;
 	}
 
 	.outcome {
@@ -253,13 +329,23 @@ nav {
 		width: 100%;
 	}
 
-	.download {
+	.download .features {
 		padding: 50px 30px;
 	}
 
 	.download__img--google {
 		margin-left: 0;
 		margin-top: 10px;
+	}
+
+	.reviews {
+		padding: 0 30px 80px 30px;
+	}
+
+	.reviews__card {
+		flex: 0 0 100%;
+		margin-top: 80px;
+		scroll-margin-top: 80px;
 	}
 
 	.outcome {
