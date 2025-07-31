@@ -58,11 +58,11 @@
 	gap: 2.5rem;
 }
 
-.hero__left__title {
+.hero__title {
 	font-size: clamp(3rem, 5vw + 1rem, 4.5rem);
 }
 
-.hero__left__text {
+.hero__text {
 	font-size: clamp(1rem, 3vw + 0.1rem, 1.2rem);
 	line-height: 1.2;
 }
@@ -77,36 +77,57 @@
 
 /* Main */
 
-.apresentation {
+.about {
 	background-color: var(--white);
 	color: var(--black);
 	padding: 120px 100px;
 }
 
-.apresentation__title {
+.about__title {
 	font-size: clamp(1.5rem, 5vw + 1rem, 2.5rem);
 	color: var(--primary-color);
 	margin-bottom: 35px;
 }
 
-.apresentation__title span {
+.about__title span {
 	font-size: clamp(1rem, 3vw + 0.1rem, 1.2rem);
 	color: var(--black);
 }
 
-.apresentation__text {
+.about__text {
 	font-size: clamp(1rem, 3vw + 0.1rem, 1.2rem);
 	line-height: 1.2;
 	width: 80%;
 }
 
-.features {
+.tools {
 	color: var(--black);
 	padding: 120px 100px;
+	display: flex;
+	flex-direction: column;
+	gap: 100px;
 }
 
-.features__title {
+.tools__left {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.tools__right {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.tools__title {
 	font-size: clamp(1rem, 5vw + 0.5rem, 2rem);
+	display: block;
+}
+
+.tools__img {
+	max-width: 300px;
+	width: 100%;
 }
 
 .reviews {
@@ -172,24 +193,25 @@
 	margin-top: 120px;
 }
 
-.outcome {
+.benefits {
 	padding: 120px 100px;
 	display: grid;
 	justify-content: center;
+	align-items: center;
 	grid-template-columns: repeat(4, auto);
 	grid-template-rows: repeat(1, 1fr);
 	text-align: center;
 	gap: 100px;
 }
 
-.outcome__img {
+.benefits__img {
 	max-width: 100px;
 	width: 100%;
 	height: auto;
 	margin-bottom: 15px;
 }
 
-.outcome_text {
+.benefits__text {
 	font-size: clamp(1rem, 5vw + 0.5rem, 1.5rem);
 	font-weight: 600;
 }
@@ -259,12 +281,12 @@
 @media all and (max-width: 1100px) {
 	/* Main */
 
-	.apresentation__title span {
+	.about__title span {
 		display: block;
 		margin-top: 10px;
 	}
 
-	.outcome {
+	.benefits {
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(2, 1fr);
 	}
@@ -285,12 +307,17 @@
 
 	/* Main */
 
-	.apresentation,
-	.features,
-	.outcome,
+	.about,
+	.tools,
+	.benefits,
 	.download {
 		padding: 70px;
 	}
+
+	.tools__img {
+		max-width: 200px;
+	}
+
 	.reviews {
 		padding: 0 70px 70px 70px;
 	}
@@ -326,20 +353,29 @@
 
 	/* Main */
 
-	.apresentation,
+	.about,
 	.download,
-	.features,
-	.outcome {
+	.tools,
+	.benefits {
 		padding: 50px 30px;
 	}
 
-	.apresentation__text {
+	.about__text {
 		width: 100%;
 	}
 
-	.download__img--google {
-		margin-left: 0;
-		margin-top: 10px;
+	.tools__img {
+		margin-top: 50px;
+	}
+
+	.tools__left {
+		flex-direction: column-reverse;
+		text-align: center;
+	}
+
+	.tools__right {
+		flex-direction: column;
+		text-align: center;
 	}
 
 	.reviews {
@@ -355,15 +391,18 @@
 		margin-top: 80px;
 	}
 
-	.outcome {
+	.benefits {
 		grid-template-columns: 1fr;
-		gap: 0;
+		gap: 60px;
 	}
 
-	.outcome__bed,
-	.outcome__target,
-	.outcome__spa {
-		margin-top: 50px;
+	.benefits__img {
+		max-width: 80px;
+	}
+
+	.download__img--google {
+		margin-left: 0;
+		margin-top: 10px;
 	}
 
 	/* footer */
@@ -405,7 +444,7 @@
 /* header */
 
 @container heroRight (max-width: 767px) {
-	.hero__right__img {
+	.hero__img {
 		width: 100%;
 	}
 }
