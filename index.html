@@ -11,14 +11,15 @@
 		<link rel="stylesheet" href="./css/reset.css" />
 		<link rel="stylesheet" href="./css/common.css" />
 		<link rel="stylesheet" href="./css/style.css" />
+		<script src="./js/script.js" defer></script>
 
 		<title>Calmara</title>
 	</head>
 	<body>
 		<header>
 			<nav class="nav">
-				<a href="./index.html">
-					<img src="./assets/logo.png" alt="Calmara logo" class="nav__img" />
+				<a href="./index.html" class="nav__link">
+					<img src="./assets/logo.svg" alt="Calmara logo" class="nav__img" />
 				</a>
 				<div class="nav__right">
 					<a href="#" class="btn btn--primary">Get the app</a>
@@ -78,9 +79,9 @@
 				</div>
 			</section>
 			<section class="reviews">
-				<a href="#review1" class="reviews__arrow reviews__arrow--left">&#10094;</a>
+				<button class="reviews__arrow reviews__arrow--left" id="leftArrow">&#10094;</button>
 				<div class="reviews__carousel">
-					<div class="reviews__card" id="review1">
+					<div class="reviews__card">
 						<p class="reviews__text">
 							"Calmara helped me slow down and reconnect with myself. I never realized how much I needed a moment of stillness until I made it part of my daily routine."
 						</p>
@@ -93,7 +94,31 @@
 						</div>
 						<span class="reviews__text"> - John</span>
 					</div>
-					<div class="reviews__card" id="review2">
+					<div class="reviews__card">
+						<p class="reviews__text">"I started using Calmara before bed, and it completely changed my sleep routine. I fall asleep faster and wake up feeling more rested."</p>
+						<div>
+							<img src="./assets/star-solid-full.svg" alt="star" class="reviews__star" />
+							<img src="./assets/star-solid-full.svg" alt="star" class="reviews__star" />
+							<img src="./assets/star-solid-full.svg" alt="star" class="reviews__star" />
+							<img src="./assets/star-solid-full.svg" alt="star" class="reviews__star" />
+							<img src="./assets/star-solid-full.svg" alt="star" class="reviews__star" />
+						</div>
+						<span class="reviews__text"> - Priya</span>
+					</div>
+
+					<div class="reviews__card">
+						<p class="reviews__text">"Calmara is my go-to app during busy workdays. Just five minutes of guided breathing helps me refocus and feel more in control."</p>
+						<div>
+							<img src="./assets/star-solid-full.svg" alt="star" class="reviews__star" />
+							<img src="./assets/star-solid-full.svg" alt="star" class="reviews__star" />
+							<img src="./assets/star-solid-full.svg" alt="star" class="reviews__star" />
+							<img src="./assets/star-solid-full.svg" alt="star" class="reviews__star" />
+							<img src="./assets/star-solid-full.svg" alt="star" class="reviews__star" />
+						</div>
+						<span class="reviews__text"> - Lucas</span>
+					</div>
+
+					<div class="reviews__card">
 						<p class="reviews__text">"Whenever I feel anxious, I open Calmara. The breathing exercises and soothing voice help me feel grounded again."</p>
 						<div>
 							<img src="./assets/star-solid-full.svg" alt="star" class="reviews__star" />
@@ -105,7 +130,7 @@
 						<span class="reviews__text"> - Taylor</span>
 					</div>
 				</div>
-				<a href="#review2" class="reviews__arrow reviews__arrow--right">&#10095;</a>
+				<button class="reviews__arrow reviews__arrow--right" id="rightArrow">&#10095;</button>
 			</section>
 			<section class="benefits">
 				<ul class="benefits__smile">
@@ -131,7 +156,7 @@
 					<img src="./assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the App Store" class="download__img" />
 				</a>
 				<a href="#" aria-label="Download Calmara on the App Store">
-					<img src="./assets/GetItOnGooglePlay_Badge_Web_color_English.png" alt="Get it on Google Play" class="download__img download__img--google" />
+					<img src="./assets/googleplay.svg" alt="Get it on Google Play" class="download__img download__img--google" />
 				</a>
 			</section>
 		</main>

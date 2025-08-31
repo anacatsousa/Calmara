@@ -29,6 +29,10 @@
 	width: 100%;
 }
 
+.nav__link {
+	height: 40px;
+}
+
 .nav__img {
 	max-width: 40px;
 	width: 100%;
@@ -59,7 +63,7 @@
 }
 
 .hero__title {
-	font-size: clamp(3rem, 5vw + 1rem, 4.5rem);
+	font-size: clamp(3rem, 2vw + 0.2rem, 4.5rem);
 }
 
 .hero__text {
@@ -84,7 +88,7 @@
 }
 
 .about__title {
-	font-size: clamp(1.5rem, 5vw + 1rem, 2.5rem);
+	font-size: clamp(1.5rem, 2vw + 0.2rem, 2rem);
 	color: var(--primary-color);
 	margin-bottom: 35px;
 }
@@ -121,7 +125,7 @@
 }
 
 .tools__title {
-	font-size: clamp(1rem, 5vw + 0.5rem, 2rem);
+	font-size: clamp(1.5rem, 2vw + 0.2rem, 2rem);
 	display: block;
 }
 
@@ -167,7 +171,6 @@
 	flex: 0 0 100%;
 	scroll-snap-align: start;
 	margin-top: 120px;
-	scroll-margin-top: 120px;
 }
 
 .reviews__text {
@@ -191,6 +194,8 @@
 	align-items: center;
 	border-radius: 50%;
 	margin-top: 120px;
+	border: 0;
+	cursor: pointer;
 }
 
 .benefits {
@@ -212,7 +217,7 @@
 }
 
 .benefits__text {
-	font-size: clamp(1rem, 5vw + 0.5rem, 1.5rem);
+	font-size: clamp(1.25rem, 2vw + 0.2rem, 1.5rem);
 	font-weight: 600;
 }
 
@@ -222,19 +227,19 @@
 	text-align: center;
 }
 .download__text {
-	font-size: clamp(1rem, 5vw + 0.5rem, 2rem);
+	font-size: clamp(1.5rem, 2vw + 0.2rem, 2rem);
 	font-weight: 600;
 	margin-bottom: 50px;
 }
 
 .download__img {
-	max-width: 200px;
+	max-width: 180px;
 	width: 100%;
 	height: auto;
 }
 
 .download__img--google {
-	max-width: 222px;
+	max-width: 200px;
 	margin-left: 10px;
 }
 
@@ -382,6 +387,10 @@
 		padding: 0 30px 80px 30px;
 	}
 
+	.reviews__carousel {
+		margin: 0 15px;
+	}
+
 	.reviews__card {
 		margin-top: 80px;
 		scroll-margin-top: 80px;
@@ -400,7 +409,12 @@
 		max-width: 80px;
 	}
 
+	.download__img {
+		max-width: 160px;
+	}
+
 	.download__img--google {
+		max-width: 180px;
 		margin-left: 0;
 		margin-top: 10px;
 	}
