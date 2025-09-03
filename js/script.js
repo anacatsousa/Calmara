@@ -27,3 +27,4 @@ rightArrow.addEventListener('click', () => {
 
 const currentDate = () => new Date().getFullYear();
 date.textContent = currentDate();
+
