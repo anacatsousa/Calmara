@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -12,7 +12,6 @@
 		<link rel="stylesheet" href="./css/common.css" />
 		<link rel="stylesheet" href="./css/style.css" />
 		<script src="./js/script.js" defer></script>
-
 		<title>Calmara</title>
 	</head>
 	<body>
@@ -23,7 +22,7 @@
 				</a>
 				<div class="nav__right">
 					<a href="#" class="btn btn--primary">Get the app</a>
-					<a href="#" class="btn btn--secondary">Log in</a>
+					<a href="/login" class="btn btn--secondary">Log in</a>
 				</div>
 			</nav>
 			<section class="hero">
@@ -56,129 +55,135 @@
 					with yourself, and discover the power of calm with Calmara.
 				</p>
 			</section>
-			<section class="tools">
+			<section class="tools" aria-label="App features">
 				<div class="tools__left">
-					<img src="./assets/mockup-login.svg" alt="app login" class="tools__img" />
+					<img src="./assets/mockup-login.svg" alt="App login page" class="tools__img" />
 					<div>
-						<h3 class="tools__title">Progress Tracking</h3>
+						<p class="tools__title">Progress Tracking</p>
 					</div>
 				</div>
 				<div class="tools__right">
 					<div>
-						<h3 class="tools__title">Relaxing Sounds</h3>
-						<h3 class="tools__title">Focus Timer</h3>
+						<p class="tools__title">Relaxing Sounds</p>
+						<p class="tools__title">Focus Timer</p>
 					</div>
-					<img src="./assets/mockup_home.svg" alt="app home" class="tools__img" />
+					<img src="./assets/mockup_home.svg" alt="App home page" class="tools__img" />
 				</div>
 				<div class="tools__left">
-					<img src="./assets/mockup.svg" alt="app" class="tools__img" />
+					<img src="./assets/mockup.svg" alt="App meditation screen" class="tools__img" />
 					<div>
-						<h3 class="tools__title">Guided Meditations</h3>
-						<h3 class="tools__title">Breathing Techniques</h3>
+						<p class="tools__title">Guided Meditations</p>
+						<p class="tools__title">Breathing Techniques</p>
 					</div>
 				</div>
 			</section>
-			<section class="reviews">
-				<button class="reviews__arrow reviews__arrow--left" id="leftArrow">&#10094;</button>
-				<div class="reviews__carousel">
-					<div class="reviews__card">
+			<section class="reviews" aria-label="User reviews">
+				<button class="reviews__arrow reviews__arrow--left" id="leftArrow" aria-label="Previous review">&#10094;</button>
+				<div class="reviews__carousel" tabindex="-1">
+					<div class="reviews__card" aria-hidden="false">
 						<p class="reviews__text">
 							"Calmara helped me slow down and reconnect with myself. I never realized how much I needed a moment of stillness until I made it part of my daily routine."
 						</p>
-						<div>
-							<img src="./assets/star-solid-full.svg" alt="star" class="reviews__star" />
-							<img src="./assets/star-solid-full.svg" alt="star" class="reviews__star" />
-							<img src="./assets/star-solid-full.svg" alt="star" class="reviews__star" />
-							<img src="./assets/star-solid-full.svg" alt="star" class="reviews__star" />
-							<img src="./assets/star-solid-full.svg" alt="star" class="reviews__star" />
+						<div aria-label="5 out of 5 stars">
+							<img src="./assets/star-solid-full.svg" alt="" aria-hidden="true" class="reviews__star" />
+							<img src="./assets/star-solid-full.svg" alt="" aria-hidden="true" class="reviews__star" />
+							<img src="./assets/star-solid-full.svg" alt="" aria-hidden="true" class="reviews__star" />
+							<img src="./assets/star-solid-full.svg" alt="" aria-hidden="true" class="reviews__star" />
+							<img src="./assets/star-solid-full.svg" alt="" aria-hidden="true" class="reviews__star" />
 						</div>
 						<span class="reviews__text"> - John</span>
 					</div>
-					<div class="reviews__card">
+					<div class="reviews__card" aria-hidden="true">
 						<p class="reviews__text">"I started using Calmara before bed, and it completely changed my sleep routine. I fall asleep faster and wake up feeling more rested."</p>
-						<div>
-							<img src="./assets/star-solid-full.svg" alt="star" class="reviews__star" />
-							<img src="./assets/star-solid-full.svg" alt="star" class="reviews__star" />
-							<img src="./assets/star-solid-full.svg" alt="star" class="reviews__star" />
-							<img src="./assets/star-solid-full.svg" alt="star" class="reviews__star" />
-							<img src="./assets/star-solid-full.svg" alt="star" class="reviews__star" />
+						<div aria-label="5 out of 5 stars">
+							<img src="./assets/star-solid-full.svg" alt="" aria-hidden="true" class="reviews__star" />
+							<img src="./assets/star-solid-full.svg" alt="" aria-hidden="true" class="reviews__star" />
+							<img src="./assets/star-solid-full.svg" alt="" aria-hidden="true" class="reviews__star" />
+							<img src="./assets/star-solid-full.svg" alt="" aria-hidden="true" class="reviews__star" />
+							<img src="./assets/star-solid-full.svg" alt="" aria-hidden="true" class="reviews__star" />
 						</div>
 						<span class="reviews__text"> - Priya</span>
 					</div>
 
-					<div class="reviews__card">
+					<div class="reviews__card" aria-hidden="true">
 						<p class="reviews__text">"Calmara is my go-to app during busy workdays. Just five minutes of guided breathing helps me refocus and feel more in control."</p>
-						<div>
-							<img src="./assets/star-solid-full.svg" alt="star" class="reviews__star" />
-							<img src="./assets/star-solid-full.svg" alt="star" class="reviews__star" />
-							<img src="./assets/star-solid-full.svg" alt="star" class="reviews__star" />
-							<img src="./assets/star-solid-full.svg" alt="star" class="reviews__star" />
-							<img src="./assets/star-solid-full.svg" alt="star" class="reviews__star" />
+						<div aria-label="5 out of 5 stars">
+							<img src="./assets/star-solid-full.svg" alt="" aria-hidden="true" class="reviews__star" />
+							<img src="./assets/star-solid-full.svg" alt="" aria-hidden="true" class="reviews__star" />
+							<img src="./assets/star-solid-full.svg" alt="" aria-hidden="true" class="reviews__star" />
+							<img src="./assets/star-solid-full.svg" alt="" aria-hidden="true" class="reviews__star" />
+							<img src="./assets/star-solid-full.svg" alt="" aria-hidden="true" class="reviews__star" />
 						</div>
 						<span class="reviews__text"> - Lucas</span>
 					</div>
 
-					<div class="reviews__card">
+					<div class="reviews__card" aria-hidden="true">
 						<p class="reviews__text">"Whenever I feel anxious, I open Calmara. The breathing exercises and soothing voice help me feel grounded again."</p>
-						<div>
-							<img src="./assets/star-solid-full.svg" alt="star" class="reviews__star" />
-							<img src="./assets/star-solid-full.svg" alt="star" class="reviews__star" />
-							<img src="./assets/star-solid-full.svg" alt="star" class="reviews__star" />
-							<img src="./assets/star-solid-full.svg" alt="star" class="reviews__star" />
-							<img src="./assets/star-solid-full.svg" alt="star" class="reviews__star" />
+						<div aria-label="5 out of 5 stars">
+							<img src="./assets/star-solid-full.svg" alt="" aria-hidden="true" class="reviews__star" />
+							<img src="./assets/star-solid-full.svg" alt="" aria-hidden="true" class="reviews__star" />
+							<img src="./assets/star-solid-full.svg" alt="" aria-hidden="true" class="reviews__star" />
+							<img src="./assets/star-solid-full.svg" alt="" aria-hidden="true" class="reviews__star" />
+							<img src="./assets/star-solid-full.svg" alt="" aria-hidden="true" class="reviews__star" />
 						</div>
 						<span class="reviews__text"> - Taylor</span>
 					</div>
 				</div>
-				<button class="reviews__arrow reviews__arrow--right" id="rightArrow">&#10095;</button>
+				<button class="reviews__arrow reviews__arrow--right" id="rightArrow" aria-label="Next review">&#10095;</button>
 			</section>
 			<section class="benefits">
-				<ul class="benefits__smile">
-					<li><img src="./assets/face-smile.svg" alt="smile face emoji" class="benefits__img" /></li>
-					<li class="benefits__text">Less Stress</li>
-				</ul>
-				<ul class="benefits__target">
-					<li><img src="./assets/bullseye.svg" alt="target emoji" class="benefits__img" /></li>
-					<li class="benefits__text">More Productivity</li>
-				</ul>
-				<ul class="benefits__bed">
-					<li><img src="./assets/bed.svg" alt="bed emoji" class="benefits__img" /></li>
-					<li class="benefits__text">Better Sleep</li>
-				</ul>
-				<ul class="benefits__spa">
-					<li><img src="./assets/spa.svg" alt="spa emoji" class="benefits__img" /></li>
-					<li class="benefits__text">Clearer Mind</li>
-				</ul>
+				<div class="benefits__smile">
+					<img src="./assets/face-smile.svg" alt="smile face emoji" class="benefits__img" />
+					<p class="benefits__text">Less Stress</p>
+				</div>
+				<div class="benefits__target">
+					<img src="./assets/bullseye.svg" alt="target emoji" class="benefits__img" />
+					<p class="benefits__text">More Productivity</p>
+				</div>
+				<div class="benefits__bed">
+					<img src="./assets/bed.svg" alt="bed emoji" class="benefits__img" />
+					<p class="benefits__text">Better Sleep</p>
+				</div>
+				<div class="benefits__spa">
+					<img src="./assets/spa.svg" alt="spa emoji" class="benefits__img" />
+					<p class="benefits__text">Clearer Mind</p>
+				</div>
 			</section>
 			<section class="download">
-				<h3 class="download__text">Download Calmara and feel the difference</h3>
+				<h2 class="download__text">Download Calmara and feel the difference</h2>
 				<a href="#">
-					<img src="./assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the App Store" class="download__img" />
+					<img src="./assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download the app on the App Store" class="download__img" />
 				</a>
-				<a href="#" aria-label="Download Calmara on the App Store">
-					<img src="./assets/googleplay.svg" alt="Get it on Google Play" class="download__img download__img--google" />
+				<a href="#">
+					<img src="./assets/googleplay.svg" alt="Download the app on Google Play" class="download__img download__img--google" />
 				</a>
 			</section>
 		</main>
 		<footer class="footer">
-			<h3 class="footer__title footer__title--brand">Calmara</h3>
-			<ul class="footer__navigation">
-				<li><h3 class="footer__title">Navigation</h3></li>
-				<li><a href="#" class="footer__link">Calmara for IOS</a></li>
-				<li><a href="#" class="footer__link">Calmara for Android</a></li>
-				<li><a href="#" class="footer__link">Terms and conditions</a></li>
-				<li><a href="#" class="footer__link">Privacy policy</a></li>
-			</ul>
-			<ul class="footer__contact">
-				<li><h3 class="footer__title">Contact</h3></li>
-				<li><a href="#" class="footer__link">Support</a></li>
-				<li><a href="#" class="footer__link">Help center</a></li>
-			</ul>
-			<ul class="footer__follow">
-				<li><h3 class="footer__title">Follow Us</h3></li>
-				<li><a href="#" class="footer__link">Instagram</a></li>
-				<li><a href="#" class="footer__link">Facebook</a></li>
-			</ul>
+			<span class="footer__title footer__title--brand">Calmara</span>
+			<div class="footer__navigation">
+				<h3 class="footer__title">Navigation</h3>
+				<ul>
+					<li><a href="#" class="footer__link">Calmara for IOS</a></li>
+					<li><a href="#" class="footer__link">Calmara for Android</a></li>
+					<li><a href="#" class="footer__link">Terms and conditions</a></li>
+					<li><a href="#" class="footer__link">Privacy policy</a></li>
+				</ul>
+			</div>
+			<div class="footer__contact">
+				<h3 class="footer__title">Contact</h3>
+				<ul>
+					<li><a href="#" class="footer__link">Support</a></li>
+					<li><a href="#" class="footer__link">Help center</a></li>
+				</ul>
+			</div>
+			<div class="footer__follow">
+				<h3 class="footer__title">Follow Us</h3>
+				<ul>
+					<li><a href="#" class="footer__link">Instagram</a></li>
+					<li><a href="#" class="footer__link">Facebook</a></li>
+				</ul>
+			</div>
 			<span class="footer__copy"> &copy; <span id="date"></span> Calmara</span>
 		</footer>
 	</body>

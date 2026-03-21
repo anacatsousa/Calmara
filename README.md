@@ -16,6 +16,7 @@ Promotional landing page for **Calmara** — a fictional meditation and mindfuln
 Calmara is a fictional wellness app designed to help users find mental balance and focus. This landing page was built to showcase the app concept in a clear and visually appealing way.
 
 **Key sections on the page:**
+
 - Hero section with app introduction
 - Features overview (guided meditations, breathing techniques, concentration timers)
 - Call-to-action for app download
@@ -28,6 +29,7 @@ Calmara is a fictional wellness app designed to help users find mental balance a
 - Smooth scroll and subtle animations via JavaScript
 - Clean, accessible HTML structure
 - Custom CSS styling without external frameworks
+- Built with accessibility in mind (keyboard navigation, ARIA attributes, and screen reader support)
 
 <br>
 
@@ -40,20 +42,22 @@ No dependencies or package managers required — this is a plain HTML/CSS/JS pro
 ### Run Locally
 
 1. **Clone the repository**
-   ```bash
-   git clone https://github.com/anacatsousa/Calmara.git
-   ```
+
+    ```bash
+    git clone https://github.com/anacatsousa/Calmara.git
+    ```
 
 2. **Navigate into the project folder**
-   ```bash
-   cd Calmara
-   ```
+
+    ```bash
+    cd Calmara
+    ```
 
 3. **Open in your browser**
-   ```bash
-   open index.html
-   ```
-   Or simply double-click `index.html` in your file explorer.
+    ```bash
+    open index.html
+    ```
+    Or simply double-click `index.html` in your file explorer.
 
 <br>
 
