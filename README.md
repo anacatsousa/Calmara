@@ -9,6 +9,9 @@ Promotional landing page for **Calmara** — a fictional meditation and mindfuln
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
+[![Figma Prototype](https://img.shields.io/badge/Figma-View%20Prototype-F24E1E?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/proto/PByDqBtPykiadgdhwrfPZA/Calmara?node-id=9-16&viewport=352%2C-1967%2C0.59&t=AYtlYqOa0kYBzWuo-1&scaling=min-zoom&content-scaling=fixed&page-id=9%3A15&starting-point-node-id=9%3A16)
+[![Figma Design](https://img.shields.io/badge/Figma-View%20Design-A259FF?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/design/PByDqBtPykiadgdhwrfPZA/Calmara?node-id=9-15&t=AGtzOeUVxTbJiRyF-1)
+
 <br>
 
 ## About
